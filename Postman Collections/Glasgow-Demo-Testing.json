@@ -231,6 +231,42 @@
 				"url": "{{server}}/v1/tickets/{{attending_member_ticket}}/magicLinks"
 			},
 			"response": []
+		},
+		{
+			"name": "Get all magic links for Attending members",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "65fd00f0-d681-4eb8-b4bd-11999af02c59",
+						"exec": [
+							"var response = JSON.parse(responseBody);",
+							"",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "4df813c0-5099-4700-bed4-453f9d2821f7",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"data\": {\n    \"type\": \"magicLink\",\n    \"attributes\": {\n      \"email\": \"fionna.osullivan+postmantest2@gmail.com\",\n      \"extraFields\": {\n      },\n      \"firstName\": \"Brenda\",\n      \"headline\": \"\",\n      \"lastName\": \"Shields\",\n      \"metadata\": {\n        \n      },\n      \"registrationId\": \"\"\n    }\n  }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{server}}/v1/tickets/{{attending_member_ticket}}/magicLinks"
+			},
+			"response": []
 		}
 	],
 	"auth": {
@@ -263,46 +299,46 @@
 	],
 	"variable": [
 		{
-			"id": "eea158c9-29c5-4bb8-9777-dc3767d0b633",
+			"id": "eb7c8aaa-ee15-40e5-a4bc-0841565fe822",
 			"key": "server",
 			"value": "https://api.hopin.com/",
 			"type": "string"
 		},
 		{
-			"id": "e3c11f75-34b1-42b8-8096-e26d30133af9",
+			"id": "01e4047d-5a3e-4b7f-b19a-60e28509ae7d",
 			"key": "apikey",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "96178945-7782-434f-b0fd-6362b7f7f8cf",
+			"id": "c8f87eac-73cb-49b6-b2e8-57e58939daeb",
 			"key": "organization_name",
 			"value": "Glasgow Worldcon",
 			"type": "string"
 		},
 		{
-			"id": "2b380638-2ec9-4ee4-b9ad-32e0f4b38c12",
+			"id": "209483e4-2079-4919-87ef-d59d36d57fa2",
 			"key": "organization_id",
 			"value": ""
 		},
 		{
-			"id": "c56f47c0-6f09-466f-9c9e-c2614d5dac0e",
+			"id": "e284e891-7aea-42e6-b7ce-778b005e7ffa",
 			"key": "event_name",
 			"value": "Glasgow Demo",
 			"type": "string"
 		},
 		{
-			"id": "e0590ad5-6177-469f-935a-512f2cb0fecd",
+			"id": "5a7fc6e3-11af-46e1-94f9-9bd4111cf004",
 			"key": "event_id",
 			"value": ""
 		},
 		{
-			"id": "8f30ab8b-51fe-445c-95cd-fb99404b1f37",
+			"id": "b8d4eadc-f1c7-43de-aa6e-a13a71d32b1a",
 			"key": "wsfs_member_ticket",
 			"value": ""
 		},
 		{
-			"id": "a192d835-109b-42a6-840c-a83dd3762539",
+			"id": "9edd278f-6f41-45ad-b597-43f6ab4f3eb7",
 			"key": "attending_member_ticket",
 			"value": ""
 		}
