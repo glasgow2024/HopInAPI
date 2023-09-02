@@ -1,0 +1,211 @@
+{
+	"info": {
+		"_postman_id": "ffbb8029-5de8-48e8-b9f0-6a3f5c278e72",
+		"name": "HopIn",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "HealthCheck",
+			"_postman_id": "8c36e296-51d3-40a0-8201-e1864b054be5",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{server}}/v1/health"
+			},
+			"response": []
+		},
+		{
+			"name": "Get organisation and set organisation id",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6ce4ec1d-06e7-4e92-896e-23e49cbf5bcf",
+						"exec": [
+							"var response = JSON.parse(responseBody);",
+							"var org = response.data.find(c=> { return c.attributes.name == pm.collectionVariables.get(\"organization_name\")});",
+							"pm.collectionVariables.set(\"organization_id\", org.id);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"_postman_id": "a2133e8b-475a-46c4-998e-e825384b8028",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{server}}/v1/organizations"
+			},
+			"response": []
+		},
+		{
+			"name": "Get events and set event id",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "a61fabd3-c6d7-4938-9c19-cb973b37dd5a",
+						"exec": [
+							"var response = JSON.parse(responseBody);",
+							"var event = response.data.find(c=> { return c.attributes.name == pm.collectionVariables.get(\"event_name\")});",
+							"pm.collectionVariables.set(\"event_id\", event.id);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"_postman_id": "a5775e6b-0702-45bc-87ef-f5c772b0cb09",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{server}}/v1/organizations/{{organization_id}}/events"
+			},
+			"response": []
+		},
+		{
+			"name": "Get all schedule items",
+			"_postman_id": "531a6fcd-c732-4fd2-bd52-152180b48a6c",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{server}}/v1/events/{{event_id}}/scheduleItems"
+			},
+			"response": []
+		},
+		{
+			"name": "Get all sessions",
+			"_postman_id": "e3c86468-d14f-4dff-9cde-4a78bfad5696",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{server}}/v1/events/{{event_id}}/sessions"
+			},
+			"response": []
+		},
+		{
+			"name": "Get ticket types",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "65fd00f0-d681-4eb8-b4bd-11999af02c59",
+						"exec": [
+							"var response = JSON.parse(responseBody);",
+							"var ticket = response.data.find(c=> { return c.attributes.name == \"WSFS\"});",
+							"pm.collectionVariables.set(\"wsfs_member_ticket\", ticket.id);",
+							"",
+							"var ticket = response.data.find(c=> { return c.attributes.name == \"Free\"});",
+							"pm.collectionVariables.set(\"attending_member_ticket\", ticket.id);",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"_postman_id": "0759e31b-9cda-4d82-991e-25a37e0d4289",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{server}}/v1/events/{{event_id}}/tickets"
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": {
+			"token": "{{apikey}}"
+		}
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "214215ab-5c11-4ea8-b97a-045b3e73a4ff",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "20c61a84-da96-4ccb-95c1-c82708786999",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "c5162f2c-7594-4d54-b759-b42d9399aabf",
+			"key": "server",
+			"value": "https://api.hopin.com/",
+			"type": "string"
+		},
+		{
+			"id": "4b5b9cec-943d-482d-a3e2-d54aeaae6c96",
+			"key": "apikey",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"id": "06fef893-ebec-404a-afbb-b41cdc5fcbc2",
+			"key": "organization_name",
+			"value": "Glasgow Worldcon",
+			"type": "string"
+		},
+		{
+			"id": "57aae8c8-27e8-417d-a8ce-640b8b5f6eda",
+			"key": "organization_id",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"id": "9f3698b1-bae2-47e0-b522-53782cb576c1",
+			"key": "event_name",
+			"value": "Glasgow Demo",
+			"type": "string"
+		},
+		{
+			"id": "6ca4a7b9-112e-4f3a-8f53-7c8bd314e94e",
+			"key": "event_id",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"id": "da2742d6-7c53-46af-bd63-d5548371a096",
+			"key": "wsfs_member_ticket",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"id": "564fc8ec-a0f6-4b0e-822b-d209ceac74b1",
+			"key": "attending_member_ticket",
+			"value": "",
+			"type": "string"
+		}
+	]
+}
