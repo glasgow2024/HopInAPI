@@ -156,6 +156,10 @@
 			"request": {
 				"method": "POST",
 				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"data\": {\n    \"type\": \"magicLink\",\n    \"attributes\": {\n      \"email\": \"fionna.osullivan+postmantest1@gmail.com\",\n      \"extraFields\": {\n        \"property1\": \"string\",\n        \"property2\": \"string\"\n      },\n      \"firstName\": \"Fionna\",\n      \"headline\": \"Adventurer\",\n      \"lastName\": \"Shields\",\n      \"metadata\": {\n        \"property1\": \"string\",\n        \"property2\": \"string\"\n      },\n      \"registrationId\": \"string\"\n    }\n  }\n}"
+				},
 				"url": "{{server}}/v1/tickets/{{wsfs_member_ticket}}/magicLinks"
 			},
 			"response": []
@@ -191,46 +195,46 @@
 	],
 	"variable": [
 		{
-			"id": "662c373c-d26a-4e68-90aa-0aa517ce2764",
+			"id": "54cfb2cc-75b8-41ea-80d2-9f3053645bf5",
 			"key": "server",
 			"value": "https://api.hopin.com/",
 			"type": "string"
 		},
 		{
-			"id": "997dfc9b-aeee-4f06-9246-e62960b0e5fc",
+			"id": "7a9cae42-f9b8-46c5-ae88-ef6d23fe4059",
 			"key": "apikey",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d07ff597-2eb9-4c56-b60b-446d165b887e",
+			"id": "dab6a985-ff34-4e57-9885-dfb3b9bba2f7",
 			"key": "organization_name",
 			"value": "Glasgow Worldcon",
 			"type": "string"
 		},
 		{
-			"id": "d15dd0fa-d37e-4f24-bbda-9afb488e1be4",
+			"id": "8304943e-d165-40b1-b8fe-82b207956cb3",
 			"key": "organization_id",
 			"value": ""
 		},
 		{
-			"id": "a279d977-5e87-4062-86dd-2ebe3e4e7f3b",
+			"id": "53ba06a5-7ccc-4552-bcce-0ba586bad131",
 			"key": "event_name",
 			"value": "Glasgow Demo",
 			"type": "string"
 		},
 		{
-			"id": "3c54b54c-0bc8-4ac5-a56c-40e11e442f95",
+			"id": "00af5681-5ce5-487d-80bf-a2af7231b48c",
 			"key": "event_id",
 			"value": ""
 		},
 		{
-			"id": "4539c2b4-bc97-4d77-b66e-45ab76545b08",
+			"id": "de5adbbe-2807-4fb8-95bb-d34b4cbfc364",
 			"key": "wsfs_member_ticket",
 			"value": ""
 		},
 		{
-			"id": "4548b233-718a-4e5e-b1a7-a5a4f5076197",
+			"id": "b3b038e5-9e02-4c7a-83c9-eb112bc5d96f",
 			"key": "attending_member_ticket",
 			"value": ""
 		}
