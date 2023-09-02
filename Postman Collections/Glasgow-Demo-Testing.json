@@ -189,7 +189,12 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"data\": {\n    \"type\": \"magicLink\",\n    \"attributes\": {\n      \"email\": \"fionna.osullivan+postmantest1@gmail.com\",\n      \"extraFields\": {\n      },\n      \"firstName\": \"Fionna\",\n      \"headline\": \"Adventurer\",\n      \"lastName\": \"Shields\",\n      \"metadata\": {\n        \n      },\n      \"registrationId\": null\n    }\n  }\n}"
+					"raw": "{\n  \"data\": {\n    \"type\": \"magicLink\",\n    \"attributes\": {\n      \"email\": \"fionna.osullivan+postmantest1@gmail.com\",\n      \"extraFields\": {\n      },\n      \"firstName\": \"Fionna\",\n      \"headline\": \"Adventurer\",\n      \"lastName\": \"Shields\",\n      \"metadata\": {\n        \n      },\n      \"registrationId\": null\n    }\n  }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
 				},
 				"url": "{{server}}/v1/tickets/{{wsfs_member_ticket}}/magicLinks"
 			},
@@ -226,46 +231,46 @@
 	],
 	"variable": [
 		{
-			"id": "a92027cd-2a77-476c-b4b2-1ed8c982395a",
+			"id": "28b9fd05-58bf-499b-b678-7c286ead1a31",
 			"key": "server",
 			"value": "https://api.hopin.com/",
 			"type": "string"
 		},
 		{
-			"id": "97ac094d-edad-4f12-94eb-5865fb54d821",
+			"id": "77bc218e-a315-4574-8225-9b759eb9ad33",
 			"key": "apikey",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a57c2371-3ebc-49dd-b5a4-10b79be117e0",
+			"id": "67b25356-9150-4903-b117-17ad10d2a409",
 			"key": "organization_name",
 			"value": "Glasgow Worldcon",
 			"type": "string"
 		},
 		{
-			"id": "1ac84240-795f-48c1-8d99-14dac0085492",
+			"id": "02f5025d-6c01-4fee-a5ad-27655f9ed3a7",
 			"key": "organization_id",
 			"value": ""
 		},
 		{
-			"id": "e8a22e62-4ca8-4cf7-bce3-0cd6afbb975b",
+			"id": "e9b23135-62a9-4618-921e-cf0b050d2df2",
 			"key": "event_name",
 			"value": "Glasgow Demo",
 			"type": "string"
 		},
 		{
-			"id": "18737d63-5035-4ad7-8244-81ee1e76c0a5",
+			"id": "2231b04b-e47d-449a-9f42-968b7f4faede",
 			"key": "event_id",
 			"value": ""
 		},
 		{
-			"id": "e28c01c0-cdd1-418c-9b80-3c55916cbb13",
+			"id": "c11618ae-73ff-4db8-86c1-5b281ddaecc6",
 			"key": "wsfs_member_ticket",
 			"value": ""
 		},
 		{
-			"id": "c3cb02dd-519b-4e8e-84f0-937222f41701",
+			"id": "67d35377-d3a1-41fc-acc1-eaafbe03a763",
 			"key": "attending_member_ticket",
 			"value": ""
 		}
