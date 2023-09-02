@@ -169,7 +169,7 @@
 						"id": "65fd00f0-d681-4eb8-b4bd-11999af02c59",
 						"exec": [
 							"var response = JSON.parse(responseBody);",
-							"var registrantDetails = { email: response.data.attributes.email, link: response.data.attributes.magicLink };",
+							"const registrantDetails = { email: response.data.attributes.email, link: response.data.attributes.magicLink };",
 							"",
 							"pm.collectionVariables.set(\"newRegistrant\", registrantDetails.magicLink);",
 							""
@@ -328,51 +328,51 @@
 	],
 	"variable": [
 		{
-			"id": "22eaf659-7770-4ece-b710-3574e5ad2bd9",
+			"id": "85e1335f-f87d-4d81-bba3-b4a1c8894412",
 			"key": "server",
 			"value": "https://api.hopin.com/",
 			"type": "string"
 		},
 		{
-			"id": "2602814f-3e95-4777-a165-6c7e696e0989",
+			"id": "7f981839-8043-4e52-96dd-34b88f4f9cad",
 			"key": "apikey",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "9a3fbabe-8482-4ab5-948c-a40fb288aafa",
+			"id": "66868b51-2389-48e5-b102-f49b94508419",
 			"key": "organization_name",
 			"value": "Glasgow Worldcon",
 			"type": "string"
 		},
 		{
-			"id": "9073270d-ea25-47dc-acb0-a9e9a527c863",
+			"id": "e443bf9c-706f-42a6-9d96-b8168a9e644e",
 			"key": "organization_id",
 			"value": ""
 		},
 		{
-			"id": "021565a6-0fc6-48ef-8ccd-8a31c8be9be6",
+			"id": "830f6448-c535-4d50-bb75-e6e57891889a",
 			"key": "event_name",
 			"value": "Glasgow Demo",
 			"type": "string"
 		},
 		{
-			"id": "98330436-d021-415e-91af-0eae590efb6c",
+			"id": "018c2a54-df6f-4264-a07b-a1f65e10cf03",
 			"key": "event_id",
 			"value": ""
 		},
 		{
-			"id": "a7cbc461-1e64-4d98-ac34-4816c0d1a142",
+			"id": "8213a387-5ae5-415b-b8d4-f30538483ee5",
 			"key": "wsfs_member_ticket",
 			"value": ""
 		},
 		{
-			"id": "e90ac17c-c803-44f0-bb16-262dcdb13d66",
+			"id": "4f48b8fe-2948-481b-bee8-d13327f44694",
 			"key": "attending_member_ticket",
 			"value": ""
 		},
 		{
-			"id": "6bcc6284-baf3-4275-ba09-89a337ea424c",
+			"id": "70e9b518-6acc-4c5d-81f4-eeb91d2b7373",
 			"key": "newRegistrant",
 			"value": ""
 		}
