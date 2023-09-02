@@ -7,7 +7,7 @@
 	"item": [
 		{
 			"name": "HealthCheck",
-			"_postman_id": "8c36e296-51d3-40a0-8201-e1864b054be5",
+			"id": "8c36e296-51d3-40a0-8201-e1864b054be5",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -34,7 +34,7 @@
 					}
 				}
 			],
-			"_postman_id": "a2133e8b-475a-46c4-998e-e825384b8028",
+			"id": "a2133e8b-475a-46c4-998e-e825384b8028",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -61,7 +61,7 @@
 					}
 				}
 			],
-			"_postman_id": "a5775e6b-0702-45bc-87ef-f5c772b0cb09",
+			"id": "a5775e6b-0702-45bc-87ef-f5c772b0cb09",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -74,7 +74,7 @@
 		},
 		{
 			"name": "Get all schedule items",
-			"_postman_id": "531a6fcd-c732-4fd2-bd52-152180b48a6c",
+			"id": "531a6fcd-c732-4fd2-bd52-152180b48a6c",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -87,7 +87,7 @@
 		},
 		{
 			"name": "Get all sessions",
-			"_postman_id": "e3c86468-d14f-4dff-9cde-4a78bfad5696",
+			"id": "e3c86468-d14f-4dff-9cde-4a78bfad5696",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -118,7 +118,38 @@
 					}
 				}
 			],
-			"_postman_id": "0759e31b-9cda-4d82-991e-25a37e0d4289",
+			"id": "0759e31b-9cda-4d82-991e-25a37e0d4289",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{server}}/v1/events/{{event_id}}/tickets"
+			},
+			"response": []
+		},
+		{
+			"name": "Create magic link",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "65fd00f0-d681-4eb8-b4bd-11999af02c59",
+						"exec": [
+							"var response = JSON.parse(responseBody);",
+							"var ticket = response.data.find(c=> { return c.attributes.name == \"WSFS\"});",
+							"pm.collectionVariables.set(\"wsfs_member_ticket\", ticket.id);",
+							"",
+							"var ticket = response.data.find(c=> { return c.attributes.name == \"Free\"});",
+							"pm.collectionVariables.set(\"attending_member_ticket\", ticket.id);",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "fb9bcc09-2983-4651-afa3-4ec083a33575",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -160,52 +191,48 @@
 	],
 	"variable": [
 		{
-			"id": "c5162f2c-7594-4d54-b759-b42d9399aabf",
+			"id": "3977f6de-92f2-4777-9d20-c99846ab5ee9",
 			"key": "server",
 			"value": "https://api.hopin.com/",
 			"type": "string"
 		},
 		{
-			"id": "4b5b9cec-943d-482d-a3e2-d54aeaae6c96",
+			"id": "176811be-0350-433c-924f-7227ed251a79",
 			"key": "apikey",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "06fef893-ebec-404a-afbb-b41cdc5fcbc2",
+			"id": "dcb1a915-3ff3-4300-bba2-890f83613e32",
 			"key": "organization_name",
 			"value": "Glasgow Worldcon",
 			"type": "string"
 		},
 		{
-			"id": "57aae8c8-27e8-417d-a8ce-640b8b5f6eda",
+			"id": "ed78bafb-a539-413f-bec1-4c0c2cf10dab",
 			"key": "organization_id",
-			"value": "",
-			"type": "string"
+			"value": ""
 		},
 		{
-			"id": "9f3698b1-bae2-47e0-b522-53782cb576c1",
+			"id": "4b39db4c-8af9-4d8a-bc40-e15d74a16957",
 			"key": "event_name",
 			"value": "Glasgow Demo",
 			"type": "string"
 		},
 		{
-			"id": "6ca4a7b9-112e-4f3a-8f53-7c8bd314e94e",
+			"id": "c19892fe-ee33-4a43-81d8-1d5d0158b71d",
 			"key": "event_id",
-			"value": "",
-			"type": "string"
+			"value": ""
 		},
 		{
-			"id": "da2742d6-7c53-46af-bd63-d5548371a096",
+			"id": "47f128da-e1c3-4268-b971-a24f340f1e8e",
 			"key": "wsfs_member_ticket",
-			"value": "",
-			"type": "string"
+			"value": ""
 		},
 		{
-			"id": "564fc8ec-a0f6-4b0e-822b-d209ceac74b1",
+			"id": "809bb0ed-c074-4bea-a974-3864676dd3c8",
 			"key": "attending_member_ticket",
-			"value": "",
-			"type": "string"
+			"value": ""
 		}
 	]
 }
