@@ -255,15 +255,6 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n  \"data\": {\n    \"type\": \"magicLink\",\n    \"attributes\": {\n      \"email\": \"fionna.osullivan+postmantest2@gmail.com\",\n      \"extraFields\": {\n      },\n      \"firstName\": \"Brenda\",\n      \"headline\": \"\",\n      \"lastName\": \"Shields\",\n      \"metadata\": {\n        \n      },\n      \"registrationId\": \"\"\n    }\n  }\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
 				"url": "{{server}}/v1/tickets/{{attending_member_ticket}}/magicLinks"
 			},
 			"response": []
@@ -335,46 +326,46 @@
 	],
 	"variable": [
 		{
-			"id": "95ae7b52-ca50-4963-840a-afe23ddf6a2f",
+			"id": "544f5c1d-7b43-4968-92ec-5bb5e64be854",
 			"key": "server",
 			"value": "https://api.hopin.com/",
 			"type": "string"
 		},
 		{
-			"id": "e3871c1f-33b8-436f-884b-3607082598d4",
+			"id": "6b3064e6-2e0f-4077-bd7e-3b8f7e6cff10",
 			"key": "apikey",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "aa5720e2-dcb9-44be-9ff4-f9e87f04ea6d",
+			"id": "e4d89929-cc64-4427-a62b-a8ba9e3dd5ba",
 			"key": "organization_name",
 			"value": "Glasgow Worldcon",
 			"type": "string"
 		},
 		{
-			"id": "ab3c5b03-e96e-4ec8-b780-00db020fe95d",
+			"id": "c2ddad19-481c-4d9e-947f-0f362611820d",
 			"key": "organization_id",
 			"value": ""
 		},
 		{
-			"id": "97ab3eb0-d0b4-40ad-8d44-d873876f7adb",
+			"id": "ac5dbd08-b5f2-4e13-9649-829e349f70f9",
 			"key": "event_name",
 			"value": "Glasgow Demo",
 			"type": "string"
 		},
 		{
-			"id": "d591ecfe-cefd-49c6-81a6-b3d87bf32550",
+			"id": "64fe5916-6a93-4b20-a5ac-d0b031822079",
 			"key": "event_id",
 			"value": ""
 		},
 		{
-			"id": "7319c94f-4781-4d14-8c68-d6f7aa63130b",
+			"id": "d8ca7f9d-92d6-473f-907f-dc8eebbddd4b",
 			"key": "wsfs_member_ticket",
 			"value": ""
 		},
 		{
-			"id": "55cb0a28-e087-44c0-b472-1b57aa01ba35",
+			"id": "dacfc4e4-d0d1-4fb8-9545-d01e83c67aa7",
 			"key": "attending_member_ticket",
 			"value": ""
 		}
