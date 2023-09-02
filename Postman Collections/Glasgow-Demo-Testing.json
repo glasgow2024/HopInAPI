@@ -189,7 +189,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"data\": {\n    \"type\": \"magicLink\",\n    \"attributes\": {\n      \"email\": \"fionna.osullivan+postmantest1@gmail.com\",\n      \"extraFields\": {\n        \"property1\": \"string\",\n        \"property2\": \"string\"\n      },\n      \"firstName\": \"Fionna\",\n      \"headline\": \"Adventurer\",\n      \"lastName\": \"Shields\",\n      \"metadata\": {\n        \"property1\": \"string\",\n        \"property2\": \"string\"\n      },\n      \"registrationId\": \"string\"\n    }\n  }\n}"
+					"raw": "{\n  \"data\": {\n    \"type\": \"magicLink\",\n    \"attributes\": {\n      \"email\": \"fionna.osullivan+postmantest1@gmail.com\",\n      \"extraFields\": {\n      },\n      \"firstName\": \"Fionna\",\n      \"headline\": \"Adventurer\",\n      \"lastName\": \"Shields\",\n      \"metadata\": {\n        \n      },\n      \"registrationId\": null\n    }\n  }\n}"
 				},
 				"url": "{{server}}/v1/tickets/{{wsfs_member_ticket}}/magicLinks"
 			},
@@ -226,46 +226,46 @@
 	],
 	"variable": [
 		{
-			"id": "fb965034-064e-4767-a656-71b011619989",
+			"id": "a92027cd-2a77-476c-b4b2-1ed8c982395a",
 			"key": "server",
 			"value": "https://api.hopin.com/",
 			"type": "string"
 		},
 		{
-			"id": "5a31a3c9-f703-4662-aa7c-bf2b02f3ac1c",
+			"id": "97ac094d-edad-4f12-94eb-5865fb54d821",
 			"key": "apikey",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "98d87d62-46c4-473c-9df1-5c6b579b0e55",
+			"id": "a57c2371-3ebc-49dd-b5a4-10b79be117e0",
 			"key": "organization_name",
 			"value": "Glasgow Worldcon",
 			"type": "string"
 		},
 		{
-			"id": "21a61e41-4dec-4b01-9f7d-d92ea2bbbc38",
+			"id": "1ac84240-795f-48c1-8d99-14dac0085492",
 			"key": "organization_id",
 			"value": ""
 		},
 		{
-			"id": "a611724e-c807-43ad-ba0b-f66afd302aec",
+			"id": "e8a22e62-4ca8-4cf7-bce3-0cd6afbb975b",
 			"key": "event_name",
 			"value": "Glasgow Demo",
 			"type": "string"
 		},
 		{
-			"id": "571cb3c6-38ba-4db1-b8c2-6bb09939524c",
+			"id": "18737d63-5035-4ad7-8244-81ee1e76c0a5",
 			"key": "event_id",
 			"value": ""
 		},
 		{
-			"id": "d5b00165-03f0-40c3-bc2e-b78df48644c4",
+			"id": "e28c01c0-cdd1-418c-9b80-3c55916cbb13",
 			"key": "wsfs_member_ticket",
 			"value": ""
 		},
 		{
-			"id": "600bf1a2-4f1d-49a5-9c8c-1be5cfca814b",
+			"id": "c3cb02dd-519b-4e8e-84f0-937222f41701",
 			"key": "attending_member_ticket",
 			"value": ""
 		}
