@@ -197,7 +197,7 @@
 			"response": []
 		},
 		{
-			"name": "Create magic link for WSFS Copy",
+			"name": "Create magic link for Attending member",
 			"event": [
 				{
 					"listen": "test",
@@ -263,46 +263,46 @@
 	],
 	"variable": [
 		{
-			"id": "26b5e946-2912-467c-bf62-01045a3fc679",
+			"id": "e9c051ab-71a4-4971-9f4b-4386e0449b97",
 			"key": "server",
 			"value": "https://api.hopin.com/",
 			"type": "string"
 		},
 		{
-			"id": "5238e24f-d2e6-4a8b-80c1-b4f803016459",
+			"id": "bdb0659f-49c6-44ce-904d-0b3c96da7d19",
 			"key": "apikey",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "3a5bfccb-a1fb-43c0-bfb4-4bf80451c1de",
+			"id": "c5b75d60-24ac-4171-9dda-25508c05219f",
 			"key": "organization_name",
 			"value": "Glasgow Worldcon",
 			"type": "string"
 		},
 		{
-			"id": "10b1288d-ae48-4ceb-9e74-28ee06673083",
+			"id": "239af79c-554a-465b-b43b-c3835238109e",
 			"key": "organization_id",
 			"value": ""
 		},
 		{
-			"id": "c8660a91-020e-4ce4-918b-958039599f3d",
+			"id": "e8134006-7c2e-41fc-965d-19c79ccfe47d",
 			"key": "event_name",
 			"value": "Glasgow Demo",
 			"type": "string"
 		},
 		{
-			"id": "6b08b492-2b58-4bb8-a702-93fb320ebd57",
+			"id": "db4e77d4-a4a9-4c12-9b84-a125ab07a282",
 			"key": "event_id",
 			"value": ""
 		},
 		{
-			"id": "97509948-bd5d-4a89-9f4d-e39c08bcf310",
+			"id": "383bc854-5716-46af-b731-432b29813c97",
 			"key": "wsfs_member_ticket",
 			"value": ""
 		},
 		{
-			"id": "6de5d54e-8528-43b5-9b0d-8a1c08fcbd9f",
+			"id": "5a36cfe4-0de0-43f1-beda-08eed8b62e52",
 			"key": "attending_member_ticket",
 			"value": ""
 		}
