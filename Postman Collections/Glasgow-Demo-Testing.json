@@ -228,7 +228,7 @@
 						}
 					}
 				},
-				"url": "{{server}}/v1/tickets/{{wsfs_member_ticket}}/magicLinks"
+				"url": "{{server}}/v1/tickets/{{attending_member_ticket}}/magicLinks"
 			},
 			"response": []
 		}
@@ -263,46 +263,46 @@
 	],
 	"variable": [
 		{
-			"id": "e9c051ab-71a4-4971-9f4b-4386e0449b97",
+			"id": "881b7f31-027a-4200-a9fb-d9fd25125fe5",
 			"key": "server",
 			"value": "https://api.hopin.com/",
 			"type": "string"
 		},
 		{
-			"id": "bdb0659f-49c6-44ce-904d-0b3c96da7d19",
+			"id": "9184690d-87ac-4737-ba91-12a875dee6cd",
 			"key": "apikey",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c5b75d60-24ac-4171-9dda-25508c05219f",
+			"id": "3da34e41-c2f6-425c-82aa-baf19d4b9591",
 			"key": "organization_name",
 			"value": "Glasgow Worldcon",
 			"type": "string"
 		},
 		{
-			"id": "239af79c-554a-465b-b43b-c3835238109e",
+			"id": "dd48edbd-3cc2-40a4-bc28-50ed3873f8b0",
 			"key": "organization_id",
 			"value": ""
 		},
 		{
-			"id": "e8134006-7c2e-41fc-965d-19c79ccfe47d",
+			"id": "efbabb43-f192-4655-be06-754a8a36eaeb",
 			"key": "event_name",
 			"value": "Glasgow Demo",
 			"type": "string"
 		},
 		{
-			"id": "db4e77d4-a4a9-4c12-9b84-a125ab07a282",
+			"id": "46d54f5b-8124-483c-92d6-7806f763cc75",
 			"key": "event_id",
 			"value": ""
 		},
 		{
-			"id": "383bc854-5716-46af-b731-432b29813c97",
+			"id": "c55aa509-034f-4421-89f3-07b16f328ebc",
 			"key": "wsfs_member_ticket",
 			"value": ""
 		},
 		{
-			"id": "5a36cfe4-0de0-43f1-beda-08eed8b62e52",
+			"id": "9eb04398-6955-4280-af67-eb727e2ab56c",
 			"key": "attending_member_ticket",
 			"value": ""
 		}
